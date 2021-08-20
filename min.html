@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ECharts</title>
+<script src="echarts.min.js"></script>
+</head>
+<body>
+<div id="main" style="width: 1800px;height:900px;"></div>
+<script type="text/javascript">
+var myChart = echarts.init(document.getElementById('main'));
+var option = {title: {text: 'First 10 employee id with lowest total salary'},tooltip: {},legend: {data:['Total Salary']},xAxis: {type: 'category',data: ['13293','13278','13263','13248','13398','29515','13023','13383','13413','13428']},yAxis: {type: 'value'},series: [{data: [1487.879883,1586.879883,1685.879883,1784.879883,1794.879883,1814.099121,1870.126465,1894.153931,1987.934814,1988.112793],type: 'bar'}]}
+myChart.setOption(option);
+</script>
+</body>
+</html>
